@@ -3,12 +3,15 @@ import { Platform, StyleSheet, Text, View } from 'react-native';
 import Header from './src/components/Header';
 import Footer from './src/components/Footer';
 import List from './src/components/List';
+import Input from './src/components/Input';
 
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
         <Header>To-Do List</Header>
+        <Input
+        placeholder='Type a todo!'/>
         <List />
         <Footer>Delete item</Footer>
       </View>
